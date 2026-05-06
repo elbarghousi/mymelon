@@ -4,48 +4,97 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MelonCoin 🍉</title>
+
 <style>
 body {
     margin: 0;
-    font-family: Arial;
-    background: #0b0f0c;
+    font-family: Arial, sans-serif;
+    background: #07140b;
     color: white;
     text-align: center;
 }
+
 header {
-    padding: 60px 20px;
-    background: linear-gradient(135deg, #00ff88, #003d1f);
+    padding: 70px 20px;
+    background: radial-gradient(circle, #21ff8a, #07140b 65%);
 }
+
+.logo {
+    width: 140px;
+    border-radius: 50%;
+    box-shadow: 0 0 30px #00ff88;
+}
+
 h1 {
-    font-size: 50px;
+    font-size: 55px;
+    margin-bottom: 10px;
 }
+
+.slogan {
+    font-size: 22px;
+    color: #d7ffe8;
+}
+
 .btn {
-    padding: 15px 30px;
-    margin: 10px;
+    display: inline-block;
+    padding: 16px 32px;
+    margin: 12px;
     background: #00ff88;
-    color: black;
-    border-radius: 30px;
+    color: #061008;
+    border-radius: 35px;
     text-decoration: none;
     font-weight: bold;
+    box-shadow: 0 0 20px #00ff88;
 }
+
+.btn:hover {
+    transform: scale(1.05);
+}
+
 .section {
     padding: 60px 20px;
 }
+
+.card {
+    background: #0d2114;
+    border: 1px solid #00ff88;
+    border-radius: 20px;
+    padding: 25px;
+    max-width: 850px;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0,255,136,0.2);
+}
+
 .tokenomics {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .box {
-    background: #111;
-    padding: 20px;
-    border-radius: 15px;
-    width: 200px;
+    background: #102918;
+    border-radius: 18px;
+    padding: 25px;
+    width: 190px;
+    border: 1px solid #00ff88;
 }
+
+.big {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00ff88;
+}
+
+.roadmap {
+    line-height: 2;
+    font-size: 18px;
+}
+
 footer {
-    padding: 20px;
-    background: #000;
+    padding: 25px;
+    background: #020603;
+    color: #aaa;
 }
 </style>
 </head>
@@ -53,47 +102,87 @@ footer {
 <body>
 
 <header>
-    <img src="logo.png" width="120">
+    <img src="logo.png" class="logo">
     <h1>🍉 MELON COIN</h1>
-    <p>The Freshest Meme Coin on Ethereum</p>
-    <a href="#" class="btn">BUY NOW</a>
+    <p class="slogan">The Juiciest Meme Coin on Ethereum</p>
+
+    <a href="#" class="btn">BUY $MELON</a>
     <a href="#" class="btn">JOIN COMMUNITY</a>
 </header>
 
 <section class="section">
-    <h2>🚀 About</h2>
-    <p>MelonCoin is a fun meme token built for the community. No utility, just vibes 🍉🔥</p>
-</section>
-
-<section class="section">
-    <h2>📊 Tokenomics</h2>
-    <div class="tokenomics">
-        <div class="box">Total Supply<br><b>1,000,000,000</b></div>
-        <div class="box">Liquidity<br><b>50%</b></div>
-        <div class="box">Marketing<br><b>30%</b></div>
-        <div class="box">Team<br><b>20%</b></div>
+    <div class="card">
+        <h2>🍉 About Melon</h2>
+        <p>
+            MelonCoin is a fun meme token built on Ethereum.
+            Fresh vibes, strong community, and pure melon energy.
+        </p>
+        <p>
+            No boring promises. Just memes, community, and green candles 🚀
+        </p>
     </div>
 </section>
 
 <section class="section">
-    <h2>🛒 How to Buy</h2>
-    <p>1. Install MetaMask<br>
-       2. Add ETH<br>
-       3. Go to Uniswap<br>
-       4. Swap ETH → MELON 🍉</p>
+    <h2>📊 Tokenomics</h2>
+
+    <div class="tokenomics">
+        <div class="box">
+            <div class="big">1B</div>
+            Total Supply
+        </div>
+
+        <div class="box">
+            <div class="big">50%</div>
+            Liquidity
+        </div>
+
+        <div class="box">
+            <div class="big">30%</div>
+            Marketing
+        </div>
+
+        <div class="box">
+            <div class="big">20%</div>
+            Community
+        </div>
+    </div>
 </section>
 
 <section class="section">
-    <h2>🗺 Roadmap</h2>
-    <p>
-    Phase 1: Launch 🍉<br>
-    Phase 2: Community Growth 🚀<br>
-    Phase 3: Listing & Marketing 📈
-    </p>
+    <div class="card">
+        <h2>🛒 How to Buy</h2>
+        <p>
+            1. Install MetaMask<br>
+            2. Buy or send ETH to your wallet<br>
+            3. Open Uniswap<br>
+            4. Swap ETH for $MELON 🍉
+        </p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="card roadmap">
+        <h2>🗺 Roadmap</h2>
+        ✅ Phase 1: Website launch<br>
+        ✅ Phase 2: Token creation<br>
+        🚀 Phase 3: Uniswap launch<br>
+        📢 Phase 4: Community growth<br>
+        🌕 Phase 5: Meme domination
+    </div>
+</section>
+
+<section class="section">
+    <div class="card">
+        <h2>📢 Community</h2>
+        <p>Follow the melon movement.</p>
+        <a href="#" class="btn">Twitter / X</a>
+        <a href="#" class="btn">Telegram</a>
+    </div>
 </section>
 
 <footer>
-    <p>© 2026 MelonCoin 🍉</p>
+    <p>© 2026 MelonCoin 🍉 | Meme token on Ethereum</p>
 </footer>
 
 </body>
