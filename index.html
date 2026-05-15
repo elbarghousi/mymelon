@@ -237,38 +237,54 @@ TELEGRAM
 Contract:
 0x0AAeD2e098a492EFa13b4e9D322f42042d3ab8fB
 </p
+<div style="text-align:center; margin:40px 0;">
 
-   <div style="text-align:center; margin:40px 0;">
-    <button onclick="document.getElementById('melonLessons').style.display =
-    document.getElementById('melonLessons').style.display === 'none' ? 'block' : 'none';"
-    class="btn">
-        🍉 MELON UNIVERSITY
-    </button>
+<button onclick="showLessons()" class="btn">
+🍉 MELON UNIVERSITY
+</button>
+
 </div>
 
 <div id="melonLessons" style="display:none;">
 
-    <div class="lesson-box">
-        <h3>🔗 What is Blockchain?</h3>
-        <p>Blockchain is a secure digital system that stores transactions on many computers around the world.</p>
-    </div>
+<div class="lesson-box">
+<h3>🔗 What is Blockchain?</h3>
+<p>
+Blockchain is a secure digital system that stores transactions on many computers worldwide.
+</p>
+</div>
 
-    <div class="lesson-box">
-        <h3>🪙 What is a Meme Coin?</h3>
-        <p>A meme coin is a fun cryptocurrency based on memes, internet culture and community.</p>
-    </div>
+<div class="lesson-box">
+<h3>🪙 What is a Meme Coin?</h3>
+<p>
+A meme coin is a cryptocurrency built around internet culture and communities.
+</p>
+</div>
 
-    <div class="lesson-box">
-        <h3>🦊 What is MetaMask?</h3>
-        <p>MetaMask is a crypto wallet used to store, send and swap tokens.</p>
-    </div>
-
-    <div class="lesson-box">
-        <h3>💧 What is Liquidity?</h3>
-        <p>Liquidity is the money available in a pool that allows people to buy and sell tokens.</p>
-    </div>
+<div class="lesson-box">
+<h3>🦊 What is MetaMask?</h3>
+<p>
+MetaMask is a crypto wallet used to store and swap cryptocurrencies.
+</p>
+</div>
 
 </div>
+
+<script>
+
+function showLessons() {
+
+var x = document.getElementById("melonLessons");
+
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+
+}
+
+</script>
 
 </body>
 </html>
