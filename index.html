@@ -121,56 +121,7 @@ footer {
 }
 </style>
 </head
-    <section class="university">
-    <h2>🍉 MELON UNIVERSITY</h2>
-    <p class="subtitle">Learn Crypto & Blockchain The Simple Way 🚀</p>
-
-    <div class="lesson-box">
-        <h3>🔗 What is Blockchain?</h3>
-        <p>
-            Blockchain is a digital technology that stores information securely on thousands of computers around the world.
-            It allows cryptocurrencies like Bitcoin and Ethereum to exist without banks.
-        </p>
-    </div>
-
-    <div class="lesson-box">
-        <h3>🪙 What is a Meme Coin?</h3>
-        <p>
-            A meme coin is a fun cryptocurrency built around internet culture, memes and communities.
-            Some meme coins become very popular thanks to strong communities and social media.
-        </p>
-    </div>
-
-    <div class="lesson-box">
-        <h3>🦊 What is MetaMask?</h3>
-        <p>
-            MetaMask is a crypto wallet that allows users to store, send and receive cryptocurrencies.
-            It also connects users to decentralized apps like Uniswap.
-        </p>
-    </div>
-
-    <div class="lesson-box">
-        <h3>💧 What is Liquidity?</h3>
-        <p>
-            Liquidity is the amount of money available for buying and selling a token.
-            Higher liquidity usually means smoother trading.
-        </p>
-    </div>
-
-    <div class="lesson-box">
-        <h3>🚀 What is Ethereum?</h3>
-        <p>
-            Ethereum is a blockchain network that allows developers to create tokens, smart contracts and decentralized applications.
-        </p>
-    </div>
-
-    <div class="lesson-box">
-        <h3>🌐 What is Web3?</h3>
-        <p>
-            Web3 is the next generation of the internet where users own digital assets, wallets and online identities.
-        </p>
-    </div>
-</section>
+    
 
 <body>
 
@@ -285,7 +236,58 @@ TELEGRAM
 <footer<p>
 Contract:
 0x0AAeD2e098a492EFa13b4e9D322f42042d3ab8fB
-</p>
+</p
+<button onclick="toggleUniversity()" class="btn">
+🍉 MELON UNIVERSITY
+</button>
+
+<div id="university-content" style="display:none; margin-top:30px;">
+
+    <div class="lesson-box">
+        <h3>🔗 What is Blockchain?</h3>
+        <p>
+            Blockchain is a digital technology that stores information securely on thousands of computers around the world.
+            It allows cryptocurrencies like Bitcoin and Ethereum to exist without banks.
+        </p>
+    </div>
+
+    <div class="lesson-box">
+        <h3>🪙 What is a Meme Coin?</h3>
+        <p>
+            A meme coin is a fun cryptocurrency built around internet culture, memes and communities.
+            Some meme coins become very popular thanks to strong communities and social media.
+        </p>
+    </div>
+
+    <div class="lesson-box">
+        <h3>🦊 What is MetaMask?</h3>
+        <p>
+            MetaMask is a crypto wallet that allows users to store, send and receive cryptocurrencies.
+            It also connects users to decentralized apps like Uniswap.
+        </p>
+    </div>
+
+    <div class="lesson-box">
+        <h3>💧 What is Liquidity?</h3>
+        <p>
+            Liquidity is the amount of money available for buying and selling a token.
+            Higher liquidity usually means smoother trading.
+        </p>
+    </div>
+
+</div>
+
+<script>
+function toggleUniversity() {
+    var content = document.getElementById("university-content");
+
+    if (content.style.display === "none") {
+        content.style.display = "block";
+    } else {
+        content.style.display = "none";
+    }
+}
+</script>
     <p>© 2026 MelonCoin 🍉 | Meme token on Ethereum</p>
 </footer>
 
