@@ -237,45 +237,54 @@ TELEGRAM
 Contract:
 0x0AAeD2e098a492EFa13b4e9D322f42042d3ab8fB
 </p
-  <div class="lesson-box">
+  <div style="text-align:center; margin:40px 0;">
+
+<button onclick="showLessons()" class="btn">
+🍉 MELON UNIVERSITY
+</button>
+
+</div>
+
+<div id="melonLessons" style="display:none;">
+
+<div class="lesson-box">
 <h3>🔗 What is Blockchain?</h3>
 <p>
-Blockchain is a revolutionary digital technology that stores information securely across thousands of computers worldwide. 
-Unlike traditional banking systems controlled by one company or government, blockchain is decentralized, transparent and secure. 
-Every transaction is recorded permanently and cannot easily be changed or deleted. 
-Cryptocurrencies like Bitcoin and Ethereum use blockchain technology to allow people to send money directly without banks.
+Blockchain is a secure digital system that stores transactions on many computers worldwide.
 </p>
 </div>
 
 <div class="lesson-box">
 <h3>🪙 What is a Meme Coin?</h3>
 <p>
-A meme coin is a cryptocurrency inspired by internet culture, memes and online communities. 
-Unlike traditional crypto projects focused mainly on technology, meme coins focus heavily on community, social media and fun branding. 
-Some meme coins become extremely popular thanks to strong online communities, viral marketing and social engagement. 
-Dogecoin and Shiba Inu are famous examples of meme coins that became global crypto phenomena.
+A meme coin is a cryptocurrency built around internet culture and communities.
 </p>
 </div>
 
 <div class="lesson-box">
 <h3>🦊 What is MetaMask?</h3>
 <p>
-MetaMask is one of the most popular cryptocurrency wallets in the world. 
-It allows users to store, send, receive and swap cryptocurrencies securely. 
-MetaMask also connects users directly to decentralized applications such as Uniswap, NFT marketplaces and blockchain games. 
-The wallet works as both a browser extension and a mobile application, giving users full control over their crypto assets.
+MetaMask is a crypto wallet used to store and swap cryptocurrencies.
 </p>
 </div>
 
-<div class="lesson-box">
-<h3>💧 What is Liquidity?</h3>
-<p>
-Liquidity represents the amount of money and tokens available inside a trading pool. 
-Higher liquidity allows people to buy and sell tokens more easily with smaller price changes. 
-Low liquidity can create strong volatility and large price swings. 
-On decentralized exchanges like Uniswap, liquidity is provided by users called liquidity providers who deposit tokens into pools and earn trading fees in return.
-</p>
 </div>
+
+<script>
+
+function showLessons() {
+
+var x = document.getElementById("melonLessons");
+
+if (x.style.display === "none") {
+x.style.display = "block";
+} else {
+x.style.display = "none";
+}
+
+}
+
+</script>
 
 </body>
 </html>
